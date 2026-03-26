@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dashboard-bg: #0f172a;
+  --color-dashboard-card: #1e293b;
+  --color-dashboard-border: #334155;
+  --color-dashboard-accent: #38bdf8;
+}
+
+body {
+  @apply bg-dashboard-bg text-slate-200 antialiased;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar for that command center look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dashboard-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dashboard-border rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}
+
